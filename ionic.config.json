@@ -2,5 +2,7 @@
   "name": "inkassator",
   "app_id": "13a4f84e",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
