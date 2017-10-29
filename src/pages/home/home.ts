@@ -39,6 +39,7 @@ export class HomePage {
     this.barcodeScanner.scan(this.options).then((barcodeData) => {
       console.log(barcodeData);
       this.scanData = barcodeData;
+      this.firebaseProvider.addItem(barcodeData.text);
     }, (err) => {
       console.log("Error occured : " + err);
     });
