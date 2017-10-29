@@ -17,10 +17,9 @@
       <button ion-button (click)="addItem()">Ввести вручную</button>
     </ion-col>
     <ion-col>
-      <button ion-button (click)="scan()">Scan ... </button>
+      <button ion-button (click)="scan()">Канировать ... </button>
       <div *ngIf="scanData">
-        <p>Scanned Text : {{scanData.text}}</p>
-        <p>Scanned Format : </p>
+        <p>Штрихкод : {{scanData.text}}</p> 
       </div>
     </ion-col>
   </ion-row>
